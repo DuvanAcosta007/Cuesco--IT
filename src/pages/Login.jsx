@@ -22,7 +22,7 @@ export default function Login({ onNavigate }) {
           </h1>
           <p className="text-sm text-slate-400 mt-1">Control operativo e inventario técnico</p>
           <div className="mt-4 bg-amber-500/10 border border-amber-500/20 text-amber-300 text-xs p-2.5 rounded-lg">
-            Modo demostración: ingresa cualquier usuario para acceder.
+            Modo demostración: ingresa cualquier usuario para acceder..
           </div>
         </div>
 

@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 import Header from '../components/Header';
-import Hero from '../components/hero';
-import Features from '../components/features';
-import Footer from '../components/footer';
+import Hero from '../components/Hero';
+import Features from '../components/Features';
+import Footer from '../components/Footer';
 import backgroundImage from '../assets/imagen home.jpg';
 
 export default function Home({ onNavigate }) {
   useEffect(() => {
-    document.title = "Cuesco-IT PALMA · Control e Inventario Técnico";
+    document.title = "Cuesco-IT PALMA · CONTROL E INVENTARIO TÉCNICO";
   }, []);
 
   return (

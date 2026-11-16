@@ -1,1 +1,39 @@
 @import "tailwindcss";
+
+:root {
+  /* Paleta Base y Superficies */
+  --bg: #f8fafc;
+  --sky: #ffffff;
+  --ink: #0f172a;
+  --muted: #475569;
+  --line: #e2e8f0;
+
+  /* Identidad Corporativa CuescoIT PALMA */
+  --brand: #065f46;       /* Emerald 800 - Principal */
+  --brand-deep: #022c22;  /* Emerald 950 - Hover / Profundo */
+  --accent: #d97706;      /* Amber 600 - Detalles y alertas */
+}
+
+/* Reglas base de accesibilidad y suavizado */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light dark;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Respeto a usuarios con sensibilidad al movimiento (requisito de accesibilidad) */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
